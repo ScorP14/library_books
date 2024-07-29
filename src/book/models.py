@@ -1,5 +1,15 @@
 from django.db import models
 
 
+class Genres(modela.Model):
+    title = model.CharField()
+
+
+
 class Books(models.Model):
-    autor = models.ForeignKey("Users")
+    title = models.CharField()
+    autor = models.ForeignKey()
+    year = models.IntegerField()
+
+    genre = models.ManyToManyField()
+    cover = models.ImageField()
