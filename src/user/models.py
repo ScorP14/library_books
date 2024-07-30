@@ -1,9 +1,9 @@
 from django.db import models
-from django.contrib.auth.models import AbsractUser
-
-
-class Users(AbsractUser):
-    pass
+# from django.contrib.auth.models import AbstractUser
+#
+#
+# class Users(AbstractUser):
+#     pass
 
 
 # Create your models here.
